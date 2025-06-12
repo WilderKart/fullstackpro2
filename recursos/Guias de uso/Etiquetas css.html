@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guía de Etiquetas y Estilos HTML/CSS</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #222;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+            background-color: #fafafa;
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f7f7f7;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 30px;
+            color: #555;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        code {
+            display: block;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.95em;
+            background-color: #f0f0f0;
+            overflow-x: auto;
+        }
+
+        .propiedad {
+            color: #0055a5;
+        }
+
+        /* Azul para propiedades CSS */
+        .valor {
+            color: #228844;
+        }
+
+        /* Verde para valores */
+        .selector {
+            color: #a31599;
+        }
+
+        /* Morado para selectores */
+        .comentario {
+            color: #888;
+        }
+
+        /* Gris para comentarios */
+        .etiqueta {
+            color: #c678dd;
+        }
+
+        /* Púrpura para etiquetas HTML */
+        .atributo {
+            color: #e5c07b;
+        }
+
+        /* Amarillo suave para atributos */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Guía de Etiquetas y Propiedades de Estilo en HTML y CSS</h1>
+
+        <div class="section-title">Etiquetas de Estilo en HTML</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Etiqueta / Propiedad</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo de Uso</th>
+                    <th>Cuándo Usarla</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="etiqueta">
+                            <style>
+                                </span></td><td>Incluye estilos CSS dentro del documento HTML.</td><td><code><style><br><span class="selector">body</span> {
+                                    <br><span class="propiedad">color</span>: <span class="valor" >#333</span>;
+                                    <br>
+                                }
+
+                                <br>
+                            </style></code></td>
+                    <td>Para estilos internos en una sola página.</td>
+                </tr>
+                <tr>
+                    <td><span class="etiqueta">
+                            <link< /span> <span class="atributo">rel="stylesheet"</span><span class="etiqueta">></span>
+                    </td>
+                    <td>Enlaza un archivo externo .css.</td>
+                    <td><code><link <span class="atributo">rel="stylesheet"</span> <span class="atributo">href="estilos.css"</span>></code>
+                    </td>
+                    <td>Para reutilizar estilos en varias páginas.</td>
+                </tr>
+                <tr>
+                    <td><span class="atributo">class</span></td>
+                    <td>Asigna uno o más nombres de clase para aplicar estilos.</td>
+                    <td><code><div <span class="atributo">class="caja rojo"</span>>Contenido</div></code></td>
+                    <td>Cuando necesitas aplicar el mismo estilo a múltiples elementos.</td>
+                </tr>
+                <tr>
+                    <td><span class="atributo">id</span></td>
+                    <td>Identificador único para un elemento.</td>
+                    <td><code><h1 <span class="atributo">id="titulo-principal"</span>>Título</h1></code></td>
+                    <td>Para dar estilo a un solo elemento específico.</td>
+                </tr>
+                <tr>
+                    <td><span class="atributo">style=""</span></td>
+                    <td>Aplica estilos directamente al elemento.</td>
+                    <td><code><p <span class="atributo">style="color: blue;"</span>>Texto</p></code></td>
+                    <td>Solo en casos puntuales, no recomendado como práctica general.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="section-title">Propiedades Comunes de CSS</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Propiedad</th>
+                    <th>Función</th>
+                    <th>Ejemplo</th>
+                    <th>Uso común</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="propiedad">color</span></td>
+                    <td>Cambia el color del texto.</td>
+                    <td><code><span class="selector">p</span> {<br>  <span class="propiedad">color</span>: <span class="valor">#333</span>;<br>}</code>
+                    </td>
+                    <td>Dar color a textos.</td>
+                </tr>
+                <tr>
+                    <td><span class="propiedad">font-family</span></td>
+                    <td>Define la fuente del texto.</td>
+                    <td><code><span class="selector">body</span> {<br>  <span class="propiedad">font-family</span>: <span class="valor">Arial, sans-serif</span>;<br>}</code>
+                    </td>
+                    <td>Personalizar tipografía.</td>
+                </tr>
+                <tr>
+                    <td><span class="propiedad">font-size</span></td>
+                    <td>Tamaño del texto.</td>
+                    <td><code><span class="selector">h1</span> {<br>  <span class="propiedad">font-size</span>: <span class="valor">16px</span>;<br>}</code>
+                    </td>
+                    <td>Ajustar tamaño de letras.</td>
+                </tr>
+                <tr>
+                    <td><span class="propiedad">background-color</span></td>
+                    <td>Color de fondo.</td>
+                    <td><code><span class="selector">div</span> {<br>  <span class="propiedad">background-color</span>: <span class="valor">#f0f0f0</span>;<br>}</code>
+                    </td>
+                    <td>Dar color al fondo de un elemento.</td>
+                </tr>
+                <tr>
+                    <td><span class="propiedad">margin</span></td>
+                    <td>Espacio exterior de un elemento.</td>
+                    <td><code><span class="selector">.caja</span> {<br>  <span class="propiedad">margin</span>: <span class="valor">10px auto</span>;<br>}</code>
+                    </td>
+                    <td>Centrar o separar bloques.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="section-title">Selectores CSS Comunes</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Selector</th>
+                    <th>Ejemplo</th>
+                    <th>Uso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Elemento (<code>p</code>, <code>div</code>, etc.)</td>
+                    <td><code><span class="selector">p</span> {<br>  <span class="propiedad">color</span>: <span class="valor">blue</span>;<br>}</code>
+                    </td>
+                    <td>Selecciona todos los elementos <code><p></code>.</td>
+                </tr>
+                <tr>
+                    <td>Clase (<code>.</code>)</td>
+                    <td><code><span class="selector">.boton</span> {<br>  <span class="propiedad">padding</span>: <span class="valor">10px</span>;<br>}</code>
+                    </td>
+                    <td>Aplica estilo a todos los elementos con <code>class="boton"</code>.</td>
+                </tr>
+                <tr>
+                    <td>ID (<code>#</code>)</td>
+                    <td><code><span class="selector">#menu</span> {<br>  <span class="propiedad">width</span>: <span class="valor">100%</span>;<br>}</code>
+                    </td>
+                    <td>Estiliza un único elemento con <code>id="menu"</code>.</td>
+                </tr>
+                <tr>
+                    <td>Atributo (<code>[type="text"]</code>)</td>
+                    <td><code><span class="selector">input[type="text"]</span> {<br>  <span class="propiedad">border</span>: <span class="valor">1px solid gray</span>;<br>}</code>
+                    </td>
+                    <td>Selecciona elementos por atributo.</td>
+                </tr>
+                <tr>
+                    <td>Pseudo-clases (<code>:hover</code>, <code>:nth-child</code>, etc.)</td>
+                    <td><code><span class="selector">a:hover</span> {<br>  <span class="propiedad">color</span>: <span class="valor">red</span>;<br>}</code>
+                    </td>
+                    <td>Aplicar estilo en estados específicos.</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+
+</html>

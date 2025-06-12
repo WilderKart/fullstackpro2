@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <div class="izquierda">
+            <img src="../imagenes/formulario.png " alt="Coocreemos juntos">
+        </div>
+        <div class="derecha">
+            <div class="h1">
+                <h1>Contáctanos</h1>
+            </div>
+            <form action="">
+                <fieldset>
+                    <legend>Formulario de contácto</legend>
+                    <div class="grupo">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div class="grupo">
+                        <label for="Correo">Correo</label>
+                        <input type="email" id="Correo Electronico" name="Correo Electronico"
+                            placeholder="Ingrese su correo electrónico" required>
+                    </div>
+                    <div class="grupo">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" required>
+                    </div>
+                    <div class="grupo">
+                        <label for="contraceña">Contraceña</label>
+                        <input type="password" id="contraceña" name="contraceña" placeholder="Ingresa tu contraceña"
+                            required>
+                    </div>
+                    <div class="grupo">
+                        <label for="edad">Edad</label>
+                        <input type="number" id="edad" name="edad" placeholder="Ingrese su edad" required>
+                    </div>
+                    <div class="grupo">
+                        <label for="fecha">Ingrese su fecha de nacimineto</label>
+                        <input type="date" name="fecha" id="fecha" placeholder="Ingrese su fecha de nacimiento"
+                            required>
+
+                    </div>
+                    <div class="grupo">
+                        <label for="mensaje">Realiza tu petición</label>
+                        <textarea name="Mensaje" placeholder="Escribe tu mensaje aqui" rows="5" id="Mensaje"></textarea>
+                    </div>
+                    <div">
+                        <label for="terminos"></label>
+                        <input type="checkbox" name="terminos" id="terminos" required>
+                        Acepto los términos y condiciones
+                        <div class="botones">
+                            <label for="boton"></label>
+                            <input type="submit" value="Enviar">
+                            <label for="boton"></label>
+                            <input type="reset" value="Borrar">
+                        </div>
+        </div>
+        </fieldset>
+        </form>
+    </div>
+
+    </div>
+</body>
+
+</html>

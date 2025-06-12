@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Desarrollador Frontend</title>
+    <!-- Enlace a Bootstrap CSS desde un CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <style>
+        /* Estilo para el fondo de la página */
+        body {
+            background-color: #f8f9fa;
+            /* Fondo claro */
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Estilo para el encabezado */
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            /* Degradado llamativo */
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+
+        }
+
+        /* Estilo para la foto de perfil */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            /* Ajusta la imagen dentro del círculo */
+            margin-top: 20px;
+            /* Margen superior */
+        }
+
+        /* Estilo para las secciones principales */
+        section {
+            padding: 40px 20px;
+            /* Espacio interno */
+            margin-bottom: 20px;
+            /* Espacio inferior */
+        }
+
+        /* Estilo para los botones de redes sociales */
+        .social-buttons a {
+            margin: 0 10px;
+            /* Espaciado entre botones */
+            text-decoration: none;
+            /* Quita el subrayado */
+            color: white;
+            /* Texto en blanco */
+            background-color: #007bff;
+            /* Color azul */
+            padding: 10px 20px;
+            /* Espaciado interno */
+            border-radius: 5px;
+            /* Bordes redondeados */
+
+
+        }
+
+        /* Estilo para los botones de redes sociales al pasar el mouse */
+        .social-buttons a:hover {
+            background-color: #0056b3;
+            /* Cambia el color al pasar el mouse */
+        }
+
+        .social-buttons {
+            margin-top: 24px;
+            /* Espacio entre botones y texto contacto */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Wilder Caicedo</h1>
+        <p class="lead">Experto en Desarrollo Frontend | HTML, CSS, JavaScript, Bootstrap</p>
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="Foto de perfil" class="profile-img">
+        <!-- Se importa la imagen de un banco de imagenes gratis -->
+    </header>
+
+    <!-- Sección "Sobre mí" -->
+    <section id="sobre_mi" class="container">
+        <h2>Sobre Mí</h2>
+
+        <p>
+            Soy un desarrollador frontend con más de 5 años de experiencia creando interfaces web modernas y
+            responsivas.
+            Me especializo en HTML, CSS, JavaScript y frameworks como Bootstrap. Mi objetivo es crear experiencias de
+            usuario
+            intuitivas y visualmente atractivas.
+        </p>
+    </section>
+
+    <!-- Sección "Habilidades" -->
+    <section id="habilidades" class="container">
+        <h2>Habilidades</h2>
+
+        <ul class="list-group">
+            <li class="list-group-item">HTML5</li>
+            <li class="list-group-item">CSS3</li>
+            <li class="list-group-item">JavaScript (ES6+)</li>
+            <li class="list-group-item">Bootstrap</li>
+            <li class="list-group-item">Responsive Design</li>
+        </ul>
+        <!-- Lista de habilidades usando el componente list-group de Bootstrap -->
+    </section>
+
+    <!-- Sección "Proyectos Destacados" -->
+    <section id="proyectos" class="container">
+        <h2 style="text-align: center; </style">Proyectos Destacados</h2>
+        <div class="row" style="margin-top: 24px;">
+            <!-- usando boostrap defino row para crera una fila que contendra columnas con md de 4 para hacer los 3 proyectos -->
+            <div class="col-md-4">
+                <div class="card"> <!--lo utilizo para creas tarjetas-->
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="Proyecto 1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">E-commerce Moderno</h5>
+                        <p class="card-text">Diseño y desarrollo de una tienda online completamente responsiva.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2020/01/26/20/14/computer-4795762_1280.jpg"
+                        alt=" Proyecto 2" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Landing Page Corporativa</h5>
+                        <p class="card-text">Creación de una landing page elegante para una empresa de tecnología,</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="Proyecto 3" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Aplicación Web Interactiva</h5>
+                        <p class="card-text">Desarrollo de una aplicación web con animaciones y funcionalidad avanzada.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- las tarjetas de proyectos usan el componente card de Bootstrap -->
+    </section>
+
+    <section id="contacto" class="container">
+        <h2>Contacto</h2>
+        <!-- Contactar al usuario -->
+        <div class="social-buttons">
+            <!--  Botones para redes sociales -->
+            <a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a>
+            <a href="https://github.com/tu-perfil" target="_blank">GitHub</a>
+            <a href="mailto:juan.perez@example.com">Correo</a>
+        </div>
+        <!--  Enlaces a redes sociales y correo electrónico -->
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="text-center py-3">
+        <!-- Pie de página con derechos reservados -->
+        &copy; 2025 Wilder Caicedo. Todos los derechos reservados.
+    </footer>
+
+    <!-- Enlace a Bootstrap JS y Popper.js desde un CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  Bootstrap JS proporciona funcionalidades interactivas como modales y carruseles -->
+</body>
+
+</html>
